@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const pool = require("./db.js");
 
 const PORT = 5000;
 
@@ -22,7 +23,6 @@ app.use(express());
 
 
 // delete a bucket
-
 
 
 
