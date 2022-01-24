@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
+import './InputBucket.css'
 
-const Bucket = () => {
+const InputBucket = () => {
     return (
         <>
             <h1>example</h1>
@@ -8,4 +9,4 @@ const Bucket = () => {
     )
 };
 
-export default Bucket;
+export default InputBucket;
