@@ -14,7 +14,7 @@ const InputBucket = () => {
             'http://localhost:5000/list',
             {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ description: bucket })
             }
         );
@@ -23,17 +23,21 @@ const InputBucket = () => {
 
     return (
         <>
-            <h1 className='title'>Bucket List</h1>
-            <form className='input' onSubmit={handleSubmit}>
-                <input 
-                    className='input__text'
-                    value={bucket}
-                    type='text'
-                    placeholder="What's your Bucket List?"
-                    onChange={handleChange}
-                />
-                <button className='input__btn'>Add</button>
-            </form>
+            <div className='input-bucket'>
+                <h1 className='title'>Bucket List</h1>
+                <h2 className='sub-title__one'>BUCKET LIST CHALLENGE</h2>
+                <p className='sub-title__two'>HOW MANY THINGS HAVE <br></br> YOU SEEN, BEEN TO OR DONE?</p>
+                <form className='input' onSubmit={handleSubmit}>
+                    <input
+                        className='input__text'
+                        value={bucket}
+                        type='text'
+                        placeholder="What's your Bucket?"
+                        onChange={handleChange}
+                    />
+                    <button className='input__btn'>ADD</button>
+                </form>
+            </div>
         </>
     )
 };

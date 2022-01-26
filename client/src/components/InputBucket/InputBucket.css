@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Oooh+Baby&family=Open+Sans:wght@400;500;600;700;800&family=Pangolin&display=swap');
+
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,4 +19,62 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+.input-bucket {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Oooh Baby', cursive;
+    font-weight: 300;
+    font-size: 10rem;
+    color: rgba(207, 133, 145, 0.877);
+}
+
+.sub-title__one {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: .7rem;
+}
+
+.sub-title__two {
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: .3rem;    
+}
+
+.input {
+    margin-top: 3rem;
+}
+
+.input__text {
+    width: 50%;
+    max-width: 30rem;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    border-bottom: solid rgba(207, 133, 145, 0.877);
+    margin-right: 2rem;
+}
+
+.input__btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .3rem;
+    color: white;
+    background: linear-gradient(to right, #ffb369 0%,#ff4272 100%); 
+    padding: .8rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+.input__btn:hover {
+    cursor: pointer;
 }
