@@ -1,10 +1,14 @@
 import React, { Fragment } from 'react';
 import './Bucket.css';
 
-const Bucket = () => {
+const Bucket = ({ description }) => {
     return (
         <>
-            <h1>example</h1>
+            <tr>
+                <td className='square'></td>
+                <td>{description}</td>
+                <td>Columns</td>
+            </tr>
         </>
     )
 };

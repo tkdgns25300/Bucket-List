@@ -19,6 +19,7 @@ const InputBucket = () => {
             }
         );
         setBucket('');
+        window.location.reload();
     }
 
     return (
