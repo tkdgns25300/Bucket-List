@@ -15,7 +15,7 @@ const AllBucket = () => {
             <table>
                 <tbody>
                     {bucketList.map(bucket => {
-                        return <Bucket description={bucket.description} key={bucket.id} />
+                        return <Bucket description={bucket.description} id={bucket.id} key={bucket.id} />
                     })}
                 </tbody>
             </table>
