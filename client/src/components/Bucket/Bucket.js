@@ -16,7 +16,7 @@ const Bucket = ({ description, id }) => {
                 <td className='square'></td>
                 <td>{description}</td>
                 <td>
-                    <button><EditBucket /></button>
+                    <button><EditBucket description={description} /></button>
                     <button onClick={handleDelete}>Delete</button>
                 </td>
             </tr>

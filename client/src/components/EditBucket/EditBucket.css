@@ -16,3 +16,12 @@ img {
     width: 100%;
     height: auto;
 }
+
+.open-modal {
+  
+}
+
+.modal {
+  position: fixed;
+  transform: .5s;
+}
