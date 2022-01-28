@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import './EditBucket.css';
 
-const EditBucket = ({ description, id }) => {
+const EditBucket = ({ description, id, handleClick }) => {
     const [bucket, setBucket] = useState(description);
 
     const handleChange = (event) => {
@@ -30,10 +30,15 @@ const EditBucket = ({ description, id }) => {
                 <h1 className='modal__title'>Edit Bucket</h1>
                 <form className='modal__submit' onSubmit={handleSubmit}>
                     <input className='modal__input' value={bucket} onChange={handleChange} />
-                    <button className='modal__edit-btn'>Edit</button>
+                    <div className='modal__btn'>
+                        <button className='modal__edit-btn'>Edit</button>
+                        <button className='modal__cancel-btn' onClick={handleClick}>Cancel</button>
+                    </div>
                 </form>
-                <button className='modal__cancel-btn'>Cancel</button>
+
             </div>
+
+            <div className='background' onClick={handleClick}></div>
         </>
     )
 };
