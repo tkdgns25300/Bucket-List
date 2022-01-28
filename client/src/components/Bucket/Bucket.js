@@ -1,9 +1,15 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import './Bucket.css';
 import EditBucket from '../EditBucket/EditBucket';
 
 const Bucket = ({ description, id }) => {
-    const handleDelete = async() => {
+    const [isOn, setIsOn] = useState(false);
+
+    const handleClick = () => {
+        setIsOn(!isOn)
+    }
+
+    const handleDelete = async () => {
         await fetch(`http://localhost:5000/list/${id}`, {
             method: 'DELETE'
         })
@@ -16,10 +22,11 @@ const Bucket = ({ description, id }) => {
                 <td className='square'></td>
                 <td>{description}</td>
                 <td>
-                    <button><EditBucket description={description} /></button>
+                    <button onClick={handleClick}>Edit</button>
                     <button onClick={handleDelete}>Delete</button>
                 </td>
             </tr>
+            {isOn && <EditBucket description={description} id={id} handleClick={handleClick} />}
         </>
     )
 };
