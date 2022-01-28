@@ -28,3 +28,10 @@ img {
   height: auto;
   margin: 0 auto;
 }
+
+.all-bucket {
+  display: block;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}

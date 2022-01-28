@@ -11,7 +11,9 @@ function App() {
       <div className='input-bucket'>
         <InputBucket />
       </div>
-      <AllBucket />
+      <div className='all-bucket'>
+        <AllBucket />
+      </div>
     </div>
   );
 }

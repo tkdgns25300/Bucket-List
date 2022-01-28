@@ -13,7 +13,7 @@ const AllBucket = () => {
     return (
         <>
             <table>
-                <tbody>
+                <tbody className='table-body'>
                     {bucketList.map(bucket => {
                         return <Bucket description={bucket.description} id={bucket.id} key={bucket.id} />
                     })}

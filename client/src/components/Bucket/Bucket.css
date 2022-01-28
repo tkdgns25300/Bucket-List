@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Jua&family=Roboto:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,4 +17,51 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+.bucket {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.square {
+    padding: 1rem;
+    border: solid 1.5px rgb(224, 224, 6);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);   
+}
+
+.description {
+    padding-left: 1rem;
+    font-family: 'Dongle', sans-serif;
+    font-size: 2rem;
+}
+
+.edit-btn {
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    border: solid 3px rgba(207, 133, 145, 0.877);
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .8rem;
+    color: rgba(207, 133, 145, 0.877);
+}
+
+.edit-btn:hover {
+    cursor: pointer;
+}
+
+.delete-btn {
+    margin-left: 1rem;
+    padding: .5rem 1rem;
+    border: solid 3px rgba(207, 133, 145, 0.877);
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: .8rem;
+    color: rgba(207, 133, 145, 0.877);
+}
+
+.delete-btn:hover {
+    cursor: pointer;
 }

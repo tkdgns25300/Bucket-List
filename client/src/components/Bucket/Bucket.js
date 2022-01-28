@@ -18,12 +18,12 @@ const Bucket = ({ description, id }) => {
 
     return (
         <>
-            <tr>
+            <tr className='bucket'>
                 <td className='square'></td>
-                <td>{description}</td>
+                <td className='description'>{description}</td>
                 <td>
-                    <button onClick={handleClick}>Edit</button>
-                    <button onClick={handleDelete}>Delete</button>
+                    <button className='edit-btn' onClick={handleClick}>Edit</button>
+                    <button className='delete-btn' onClick={handleDelete}>Delete</button>
                 </td>
             </tr>
             {isOn && <EditBucket description={description} id={id} handleClick={handleClick} />}
